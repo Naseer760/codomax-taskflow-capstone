@@ -1,4 +1,4 @@
-@'
+
 name: Deploy TaskFlow to EC2
 
 on:
@@ -40,4 +40,3 @@ jobs:
             cd /home/ubuntu/taskflow/CODOMAX-Module6-Capstone
             docker compose up -d --build
             docker compose ps
-'@ | Set-Content -Path ".github\workflows\deploy.yml" -Encoding utf8
