@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow | CODOMAX Capstone</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">CODOMAX · CLOUD & DEVOPS CAPSTONE</p>
+      <h1>TaskFlow</h1>
+      <p class="subtitle">A simple task board running on a containerized cloud stack.</p>
+    </header>
+    <section class="panel">
+      <form id="task-form">
+        <label for="task-title">Add a task</label>
+        <div class="form-row">
+          <input id="task-title" maxlength="120" placeholder="e.g. Verify the CI/CD pipeline" required>
+          <button type="submit">Add task</button>
+        </div>
+      </form>
+      <div class="list-heading">
+        <h2>Your tasks</h2>
+        <span id="count">0 tasks</span>
+      </div>
+      <p id="message" role="status"></p>
+      <ul id="tasks"></ul>
+    </section>
+    <footer><span id="health" class="status">Checking API…</span><span>Built for Module 06</span></footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

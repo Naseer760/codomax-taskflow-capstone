@@ -1,0 +1,15 @@
+{
+  "name": "taskflow-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CODOMAX TaskFlow capstone API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
